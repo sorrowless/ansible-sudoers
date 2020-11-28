@@ -1,8 +1,6 @@
 galaxy_info:
   role_name: "sudoers"
-  author:
-    - Tyler Cross
-    - Andrew J. Huffman
+  author: Tyler Cross, Andrew J. Huffman, Stan Bogatkin
   company: "Red Hat"
   description: Controls the configuration of the sudoers file and /etc/sudoers.d/ files
   issue_tracker_url: https://github.com/wtcross/ansible-sudoers/issues
