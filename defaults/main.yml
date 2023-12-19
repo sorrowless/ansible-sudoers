@@ -37,7 +37,7 @@ sudoer_defaults:
     - LINGUAS
     - _XKB_CHARSET
     - XAUTHORITY
-  - secure_path: /sbin:/bin:/usr/sbin:/usr/bin
+  - secure_path: /usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 sudoer_separate_specs: True
 sudoer_separate_specs_cleanup: False
 sudoer_rewrite_sudoers_file: True
