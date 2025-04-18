@@ -103,6 +103,7 @@
   when:
     - "sudoer_separate_specs"
     - "sudoer_remove_unauthorized_specs"
+    - item != "README"
 
 - name: "Remove separate sudoer specs if not using separate specs"
   become: yes
