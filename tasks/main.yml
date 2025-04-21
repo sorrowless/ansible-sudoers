@@ -113,3 +113,17 @@
   when:
     - "not sudoer_separate_specs"
     - "sudoer_separate_specs_cleanup"
+    - item != "90-cloud-init-users"
+
+- name: "Remove password for user ubuntu and disable shell"
+  become: yes
+  user:
+    name: "ubuntu"
+    password: "*"
+    shell: "/bin/false"
+
+- name: "Remove SSH authorized keys for user ubuntu"
+  become: yes
+  file:
+    path: "/home/ubuntu/.ssh/authorized_keys"
+    state: "absent"
