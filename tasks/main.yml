@@ -113,3 +113,4 @@
   when:
     - "not sudoer_separate_specs"
     - "sudoer_separate_specs_cleanup"
+    - item != "90-cloud-init-users"
