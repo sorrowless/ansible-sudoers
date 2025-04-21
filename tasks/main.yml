@@ -103,6 +103,8 @@
   when:
     - "sudoer_separate_specs"
     - "sudoer_remove_unauthorized_specs"
+    - "sudoer_remove_cloud_init_sudoers_file"
+
 
 - name: "Remove separate sudoer specs if not using separate specs"
   become: yes
