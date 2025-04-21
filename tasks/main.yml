@@ -103,6 +103,7 @@
   when:
     - "sudoer_separate_specs"
     - "sudoer_remove_unauthorized_specs"
+    - item != "90-cloud-init-users"
 
 - name: "Remove separate sudoer specs if not using separate specs"
   become: yes
